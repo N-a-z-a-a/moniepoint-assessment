@@ -63,7 +63,7 @@ function SubjectProgress() {
               {subject.progress}%
             </h2>
             {subject.progress < 100 ? (
-              <h2 className="text-secondary bg-white text-sm font-medium px-4 py-1 border-2 border-solid border-secondary rounded-3xl gap-2">
+              <h2 className="text-secondary bg-white text-sm font-medium px-4 py-1 border border-solid border-secondary rounded-3xl gap-2">
                 {subject.status}
               </h2>
             ) : (
