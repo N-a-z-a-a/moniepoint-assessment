@@ -1,6 +1,11 @@
 import NavigationTab from "../components/NavigationTab";
 import SubjectProgress from "../components/SubjectProgress";
 import MenuTab from "../components/MenuTab";
+import {
+  ChevronRightIcon,
+  ChevronLeftIcon,
+  EllipsisHorizontalIcon,
+} from "@heroicons/react/24/outline";
 
 function Date() {
   const dates = [
@@ -56,24 +61,24 @@ function Date() {
 }
 
 function StatsPage() {
-  const icon1 = "<";
-  const icon2 = ">";
-
   return (
     <div className="container w-full">
       <div className="flex justify-between items-center flex-row my-5 p-5">
-        <div className="text-main border-solid border-main rounded-lg py-0.5 px-2 border text-xs">
-          {icon1}
+        <div className="border-solid border-main rounded-lg py-0.5 px-1 border">
+          <ChevronLeftIcon className="h-6 w-6 text-main" />
         </div>
         <h2 className="text-black font-medium text-2xl">September</h2>
-        <div className="text-main border-solid border-main rounded-lg py-0.5 px-2 border text-xs">
-          {icon2}
+        <div className="border-solid border-main rounded-lg py-0.5 px-1 border">
+          <ChevronRightIcon className="h-6 w-6 text-main" />
         </div>
       </div>
       <div className="flex flex-row justify-center items-center gap-3 px-5">
         <Date />
       </div>
-      <NavigationTab title="Skills" icon="..." />
+      <NavigationTab
+        title="Skills"
+        icon={<EllipsisHorizontalIcon className="h-6 w-6 text-main" />}
+      />
       <SubjectProgress />
       <MenuTab />
     </div>
