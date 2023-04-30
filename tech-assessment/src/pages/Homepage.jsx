@@ -1,4 +1,5 @@
-import LeaderboardProfile from "../components/LeaderbooardProfile";
+import LeaderboardProfile from "../components/LeaderboardProfile";
+import MenuTab from "../components/MenuTab";
 import NavigationTab from "../components/NavigationTab";
 import SubjectModule from "../components/SubjectModule";
 import SummaryCard from "../components/SummaryCard";
@@ -11,6 +12,7 @@ function HomePage() {
       <SubjectModule />
       <NavigationTab title="Leaderboard" icon=">" />
       <LeaderboardProfile />
+      <MenuTab />
     </div>
   );
 }

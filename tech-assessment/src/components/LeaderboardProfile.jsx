@@ -28,7 +28,7 @@ function LeaderboardProfile() {
     },
   ];
   return (
-    <div className="flex flex-col justify-center items-center gap-5">
+    <div className="flex flex-col justify-center items-center gap-5 overflow-scroll">
       {leaderbooardArray.map((leader) => {
         return (
           <div className="bg-white flex p-5 flex-row justify-between items-center rounded-3xl gap-28">
@@ -46,8 +46,10 @@ function LeaderboardProfile() {
               </div>
             </div>
             <div className="flex flex-row justify-center items-center gap-2">
-              <h3 className="text-main">&#8593;</h3>
-              <span className="text-secondary font-medium text-xs">ico 10</span>
+              <h3 className="text-main text-lg">&#8593;</h3>
+              <span className="text-secondary font-medium text-xs">
+                &#x1F525; 10
+              </span>
             </div>
           </div>
         );

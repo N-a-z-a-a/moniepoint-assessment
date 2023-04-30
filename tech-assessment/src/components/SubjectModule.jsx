@@ -1,4 +1,4 @@
-import Image from "../../assets/image.png";
+import Image from "../assets/image.png";
 
 function SubjectModule() {
   const subjectArray = [
