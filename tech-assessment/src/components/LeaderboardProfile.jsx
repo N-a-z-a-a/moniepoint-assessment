@@ -5,16 +5,23 @@ function LeaderboardProfile() {
     {
       avatar: Image,
       altText: "alt text",
-      fullName: "Yasmine Rosh",
-      country: "Tokyo",
+      fullName: "Yasmine Lee",
+      country: "Taiwan",
       stat: "&#x1F525; 1230",
     },
     {
       avatar: Image,
       altText: "alt text",
-      fullName: "Yasmine Rosh",
-      country: "Tokyo",
+      fullName: "Guy Hawkins",
+      country: "Spain",
       stat: "&#x1F525; 1130",
+    },
+    {
+      avatar: Image,
+      altText: "alt text",
+      fullName: "Jide Abayomi",
+      country: "Nigeria",
+      stat: "&#x1F525; 930",
     },
     {
       avatar: Image,
@@ -22,13 +29,6 @@ function LeaderboardProfile() {
       fullName: "Yasmine Rosh",
       country: "Tokyo",
       stat: "&#x1F525; 1030",
-    },
-    {
-      avatar: Image,
-      altText: "alt text",
-      fullName: "Yasmine Rosh",
-      country: "Tokyo",
-      stat: "&#x1F525; 930",
     },
   ];
   return (
