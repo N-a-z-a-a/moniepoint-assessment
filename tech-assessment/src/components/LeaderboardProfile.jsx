@@ -21,14 +21,14 @@ function LeaderboardProfile() {
       altText: "alt text",
       fullName: "Jide Abayomi",
       country: "Nigeria",
-      stat: "&#x1F525; 930",
+      stat: "&#x1F525; 1030",
     },
     {
       avatar: Image,
       altText: "alt text",
       fullName: "Yasmine Rosh",
       country: "Tokyo",
-      stat: "&#x1F525; 1030",
+      stat: "&#x1F525; 930",
     },
   ];
   return (
