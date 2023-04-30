@@ -8,3 +8,5 @@ The tech stack used is <a href='https://react.dev/'>React</a> and <a href='https
 
 Feel free to browse through, be awed, and tell me where I need to do better 😁.<br/>
 Thanks! ✌🏽
+<br/><br/>
+P.S.: I couldn't get the exact colors right 🥴.
