@@ -44,7 +44,7 @@ function SubjectProgress() {
     },
   ];
   return (
-    <div className="grid grid-cols-2 gap-5 px-5 overflow-scroll">
+    <div className="grid grid-cols-2 gap-5 px-5 overflow-scroll mb-24">
       {subjects.map((subject) => {
         return (
           <div className="bg-white flex flex-col justify-center items-center py-4 gap-3 rounded-2xl">

@@ -42,7 +42,6 @@ div[role="progressbar"] {
       white 0
     ),
     conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
-  font-family: Helvetica, Arial, sans-serif;
   font-size: calc(var(--size) / 5);
   color: #000;
 }
