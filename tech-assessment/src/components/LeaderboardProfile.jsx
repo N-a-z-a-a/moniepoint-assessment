@@ -1,4 +1,5 @@
 import Image from "../assets/image.png";
+import { FireIcon, ArrowLongUpIcon } from "@heroicons/react/24/solid";
 
 function LeaderboardProfile() {
   const leaderbooardArray = [
@@ -7,35 +8,35 @@ function LeaderboardProfile() {
       altText: "alt text",
       fullName: "Yasmine Lee",
       country: "Taiwan",
-      stat: "&#x1F525; 1230",
+      stat: 1230,
     },
     {
       avatar: Image,
       altText: "alt text",
       fullName: "Guy Hawkins",
       country: "Spain",
-      stat: "&#x1F525; 1130",
+      stat: 1130,
     },
     {
       avatar: Image,
       altText: "alt text",
       fullName: "Jide Abayomi",
       country: "Nigeria",
-      stat: "&#x1F525; 1030",
+      stat: 1030,
     },
     {
       avatar: Image,
       altText: "alt text",
       fullName: "Yasmine Rosh",
       country: "Tokyo",
-      stat: "&#x1F525; 930",
+      stat: 930,
     },
   ];
   return (
     <div className="flex flex-col justify-center items-center gap-5 overflow-scroll mb-24">
       {leaderbooardArray.map((leader) => {
         return (
-          <div className="bg-white flex p-5 flex-row justify-between items-center rounded-3xl gap-28">
+          <div className="bg-white flex p-5 flex-row justify-between items-center rounded-3xl gap-24">
             <div className="flex flex-row justify-center items-center gap-2">
               <div className="border-solid rounded-full w-12 h-12 p-px border-secondary border-2">
                 <img
@@ -50,11 +51,17 @@ function LeaderboardProfile() {
               </div>
             </div>
             <div className="flex flex-row justify-center items-center gap-2">
-              <h3 className="text-green-700 text-lg">&#8593;</h3>
-              <span
-                className="text-secondary font-medium text-xs"
-                dangerouslySetInnerHTML={{ __html: leader.stat }}
-              />
+              <div>
+                <ArrowLongUpIcon className="h-6 w-6 text-green-700" />
+              </div>
+              <div className="flex justify-center items-center">
+                <div>
+                  <FireIcon className="h-6 w-6 text-secondary" />
+                </div>
+                <span className="text-secondary font-medium text-sm">
+                  {leader.stat}
+                </span>
+              </div>
             </div>
           </div>
         );

@@ -1,3 +1,5 @@
+import { FireIcon } from "@heroicons/react/24/solid";
+
 function SummaryCard() {
   return (
     <div className="px-5 mt-7">
@@ -9,9 +11,10 @@ function SummaryCard() {
           </h2>
         </div>
         <div className="bg-white flex flex-row justify-between items-center gap-1.5 py-[5px] px-[7px] rounded-2xl">
-          {/* <i class="fa-sharp fa-light fa-fire" style="color: #ff784e;"></i> */}
-          <div className="text-black border-solid border border-secondary rounded-full w-6 h-6 px-[3px] text-base">
-            &#x1F525;
+          <div className="border-solid border border-secondary rounded-full w-7 h-7 flex justify-center items-center">
+            <div>
+              <FireIcon className="h-6 w-6 text-secondary" />
+            </div>
           </div>
           <p className="text-black font-medium text-base">65</p>
         </div>
@@ -33,7 +36,9 @@ function SummaryCard() {
             <br />
             Finish the goal to achieve
             <br />
-            <span className="text-secondary font-medium">&#x1F525; 10</span>
+            <div className="flex">
+              <FireIcon className="h-6 w-6 text-secondary" /> 10
+            </div>
           </p>
         </div>
       </div>
